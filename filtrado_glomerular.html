@@ -1,0 +1,208 @@
+<div class="pages">
+  <div data-page="projects" class="page no-toolbar no-navbar">
+    <div class="page-content">
+    
+     <div class="navbarpages">
+       <div class="navbar_home_link"><a href="toogle.html"><img src="images/swipe_back.png" alt="" title="" /></a></div>
+       <div class="navbar_page_center"><b>Especialidades</b></div>
+       <div class="menu_open_icon_white"><a href="#" class="open-panel"><img src="images/menu_open.png" alt="" title="" /></a></div>
+     </div>
+     <div id="pages_maincontent">
+
+          <h2 class="page_subtitle">Filtrado glomerular estimado</h2>
+          <p><b>Autor/a:</b> Rebeca García Agudo, Nefrología, Hospital La Mancha-Centro, Alcázar de San Juan (C. Real)</p>
+          <div class="page_single">         
+              <div class="buttons-row">
+                    <a href="#tab2" class="tab-link active button">Información</a>
+                    <a href="#tab3" class="tab-link button">COCKCROFT-GAULT</a>
+              </div>
+              <div class="separadormenu_div"></div>
+              <div class="buttons-row">	
+              		<a href="#tab4" class="tab-link button">MDRD-4</a>
+                    <a href="#tab6" class="tab-link button">MDRD-6</a>
+                    <a href="#tab7" class="tab-link button">CKD-EPI</a>
+              </div>
+              
+              <div class="tabs-simple">
+                    <div class="tabs">
+                          <div id="tab2" class="tab active">
+                          		<br />
+                                <h4>Información</h4>
+                                <p></p>
+                                <p class="nojustify">
+                                &bull;&nbsp;Todas las ecuaciones han sido validadas en varias poblaciones y razas<br />
+                                &bull;&nbsp;Son precisas para filtrados glomerulares estimados (FGe) de 15-60 ml/min/1,73 m2<br />
+                                &bull;&nbsp;Solo resultan útiles en los pacientes con creatinina estable
+								
+                                </p>
+                          </div>
+                          <div id="tab3" class="tab">
+                          		<br />
+                                <h4>COCKCROFT-GAULT</h4>
+                                <p></p>
+                                <p class="nojustify">
+                                &bull;&nbsp;Es la única fórmula que tiene en cuenta el peso<br />
+                                &bull;&nbsp;Estima un FGe más alto en los obesos y más bajo en los pacientes de bajo peso
+                                </p>
+                                <p></p>
+                                <form id="contactformulas" method="post" action="">
+                                    <div class="contactformulas_general">
+                                        <div class="contactformulas_izq">
+                                            <label><font style="font-size:18px;">Edad:</font></label>
+                                            <input type="text" name="edad" id="edad" value="" class="form_input required" style="font-size:24px;"  />
+                                        </div>
+                                        <div class="contactformulas_cen">
+                                            <label><font style="font-size:18px;">Peso:</font></label>
+                                            <input type="text" name="peso" id="peso" value="" class="form_input required" style="font-size:24px;" />                    
+                                        </div>
+                                        <div class="contactformulas_der">
+                                            <label><font style="font-size:18px;">Creatinina:</font></label>
+                                            <input type="text" name="creatinina" id="creatinina" value="" class="form_input required" style="font-size:24px;"  />     
+                                        </div> 
+                                        <div class="separador_div"></div>
+                                        <div class="contactformulas_izq">
+                                        	<label><font style="font-size:18px;">Sexo:</font></label><br />
+                                        </div>
+                                        <div class="contactformulas_cen">
+                                            <input type="radio" name="sexo" value="1" checked="checked" /> <font style="font-size:18px;">Hombre</font><br />             
+                                        </div>
+                                        <div class="contactformulas_der">
+											<input type="radio" name="sexo" value="2"/>  <font style="font-size:18px;">Mujer</font><br /><br />        
+                                        </div>
+                                        <div class="contactformulas_todo" style="line-height:25px;">                                            
+                                            <input name="anadir" type="button" size="10" maxlength="10" value="Calcular" class="boton_calcular" onClick="javascript:calculomatri(edad,peso,creatinina,sexo,total.value);"> 
+                                            
+                                            <br /><br />
+                                            <label><font style="font-size:22px;">FGe:</font></label><br />
+                                            <input type="text" name="total" id="total" value="0" class="total" style="font-size:24px;"/>  
+                                    	</div>
+                                    </div>
+                                </form>
+                          </div>
+                          
+                          <div id="tab4" class="tab">
+                          		<br />
+                                <h4>MDRD-4</h4>
+                                <p></p>
+                                <form id="contactformulas2" method="post" action="">
+                                    <div class="contactformulas_general">
+                                        <div class="contactformulas_izq">
+                                            <label><font style="font-size:18px;">Edad:</font></label>
+                                            <input type="text" name="edad2" id="edad2" value="" class="form_input required" style="font-size:24px;"  />
+                                        </div>
+                                        <div class="contactformulas_der">
+                                            <label><font style="font-size:18px;">Creatinina:</font></label>
+                                            <input type="text" name="creatinina2" id="creatinina2" value="" class="form_input required" style="font-size:24px;"  />     
+                                        </div> 
+                                        <div class="separador_div"></div>
+                                        <div class="contactformulas_izq">
+                                        	<label><font style="font-size:18px;">Sexo:</font></label>
+                                            <label><font style="font-size:18px;">Raza:</font></label>
+                                        </div>
+                                        <div class="contactformulas_cen">
+											<input type="radio" name="sexo2" value="1" checked="checked" /> <font style="font-size:18px;">Hombre</font><br />  
+                                            <input type="radio" name="raza2" value="1" checked="checked" /> <font style="font-size:18px;">Blanca</font><br />       
+                                        </div>
+                                        <div class="contactformulas_der">
+                                        	<input type="radio" name="sexo2" value="2"/>  <font style="font-size:18px;">Mujer</font><br />
+                                        	<input type="radio" name="raza2" value="2"/>  <font style="font-size:18px;">Negra</font><br /><br />
+                                        </div>
+                                        <div class="contactformulas_todo" style="line-height:25px;">     
+                                            <input name="anadir" type="button" size="10" maxlength="10" value="Calcular" class="boton_calcular" onClick="javascript:calculomatri2(edad2,creatinina2,sexo2,raza2,total2.value);"> 
+                                            <br /><br />
+                                            <label><font style="font-size:22px;">FGe:</font></label><br />
+                                            <input type="text" name="total2" id="total2" value="0" class="total" style="font-size:24px;"/>  
+                                    	</div>
+                                    </div>
+                                </form>
+                          </div>
+                          <div id="tab6" class="tab">
+                          		<br />
+                                <h4>MDRD-6</h4>
+                                <p></p>
+                                <form id="contactformulas3" method="post" action="">
+                                    <div class="contactformulas_general">
+                                        <div class="contactformulas_izq">
+                                            <label><font style="font-size:18px;">Creatinina:</font></label>
+                                            <input type="text" name="creatinina3" id="creatinina3" value="" class="form_input required" style="font-size:24px;"  />
+                                        </div>
+                                        <div class="contactformulas_cen">
+                                            <label><font style="font-size:18px;">Edad:</font></label>
+                                            <input type="text" name="edad3" id="edad3" value="" class="form_input required" style="font-size:24px;"  />     
+                                        </div> 
+                                        <div class="contactformulas_der">
+                                            <label><font style="font-size:18px;">BUN:</font></label>
+                                            <input type="text" name="bun3" id="bun3" value="" class="form_input required" style="font-size:24px;"  />
+                                        </div>
+                                        <div class="separador_div"></div>
+                                        <div class="contactformulas_izq">
+                                            <label><font style="font-size:18px;">Albúmina:</font></label>
+                                            <input type="text" name="albumina3" id="albumina3" value="" class="form_input required" style="font-size:24px;"  />     
+                                        </div> 
+                                        <div class="contactformulas_cen">
+                                        	<label><font style="font-size:18px;">Sexo:</font></label>
+                                            <input type="radio" name="sexo3" value="1" checked="checked" /> <font style="font-size:18px;">Hombre</font><br /> 
+                                            <input type="radio" name="sexo3" value="2"/>  <font style="font-size:18px;">Mujer</font><br /><br /> 
+                                        </div>
+                                        <div class="contactformulas_der">
+                                        	<label><font style="font-size:18px;">Raza:</font></label>
+                                            <input type="radio" name="raza3" value="1" checked="checked" /> <font style="font-size:18px;">Blanca</font><br />
+                                            <input type="radio" name="raza3" value="2"/>  <font style="font-size:18px;">Negra</font><br /><br />       
+                                        </div>
+
+                                        <div class="contactformulas_todo" style="line-height:25px;">     
+                                            <input name="anadir" type="button" size="10" maxlength="10" value="Calcular" class="boton_calcular" onClick="javascript:calculomatri3(creatinina3,edad3,bun3,albumina3,sexo3,raza3,total3.value);"> 
+                                            <br /><br />
+                                            <label><font style="font-size:22px;">FGe:</font></label><br />
+                                            <input type="text" name="total3" id="total3" value="0" class="total" style="font-size:24px;"/>  
+                                    	</div>
+                                    </div>
+                                </form>
+                          </div> 
+
+                          <div id="tab7" class="tab">
+                          		<br />
+                                <h4>CKD-EPI</h4>
+                                <p></p>
+                                <p class="nojustify">
+                                &bull;&nbsp;Es más precisa para FGe > 90 ml/min<br />
+                                &bull;&nbsp;Estima un FGe más alto en > 65 años<br />
+                                &bull;&nbsp;Reclasifica los estadios (uno por encima)
+                                </p>
+                                <p></p>
+                                <form id="contactformulas4" method="post" action="">
+                                    <div class="contactformulas_general">
+                                        <div class="contactformulas_izq">
+                                            <label><font style="font-size:18px;">Edad:</font></label>
+                                            <input type="text" name="edad4" id="edad4" value="" class="form_input required" style="font-size:24px;"  />
+                                        </div>
+                                        <div class="contactformulas_der">
+                                            <label><font style="font-size:18px;">Creatinina:</font></label>
+                                            <input type="text" name="creatinina4" id="creatinina4" value="" class="form_input required" style="font-size:24px;"  />     
+                                        </div> 
+                                        <div class="separador_div"></div>
+                                        <div class="contactformulas_izq">
+                                        	<label><font style="font-size:18px;">Sexo:</font></label>
+                                        </div>
+                                        <div class="contactformulas_cen">
+											<input type="radio" name="sexo4" value="1" checked="checked" /> <font style="font-size:18px;">Hombre</font><br />        
+                                        </div>
+                                        <div class="contactformulas_der">
+                                        	<input type="radio" name="sexo4" value="2"/>  <font style="font-size:18px;">Mujer</font><br /><br />
+                                        </div>
+                                        <div class="contactformulas_todo" style="line-height:25px;">     
+                                            <input name="anadir" type="button" size="10" maxlength="10" value="Calcular" class="boton_calcular" onClick="javascript:calculomatri4(edad4,creatinina4,sexo4,total4.value);"> 
+                                            <br /><br />
+                                            <label><font style="font-size:22px;">FGe:</font></label><br />
+                                            <input type="text" name="total4" id="total4" value="0" class="total" style="font-size:24px;"/>  
+                                    	</div>
+                                    </div>
+                                </form>
+                          </div> 
+                    </div>
+              </div>        
+          </div>     
+      </div>  
+    </div>
+  </div>
+</div>
